@@ -18,6 +18,7 @@ RUN_FLAGS="
 --cap-add=SYS_PTRACE \
 --mount type=bind,src=$DIR/circt,dst=/home/user/circt \
 --mount type=bind,src=$DIR/workspace,dst=/home/user/workspace \
+--mount type=bind,src=$DIR/scripts,dst=/home/user/scripts \
 --shm-size=$HOST_SHMEM_SIZE \
 --ulimit msgqueue=2097152000 \
 "
